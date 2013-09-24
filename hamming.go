@@ -1,6 +1,6 @@
 // A small package that returns the hamming distance
-// between two integers. Uses a lookup table by bytes
-// speeds up lookups.
+// between two integers. Uses a lookup table for bytes
+// to speed up calculations.
 package hamming
 
 var table [256]int = [256]int{
