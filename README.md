@@ -1,4 +1,6 @@
-hamming
-=======
+bits
+=====
 
-Small go package that returns the hamming distance between integers.
+Package bits has functions to compute hamming distance and set bits count.
+
+Documentation can be found on [godoc](http://godoc.com/twmb.bits).

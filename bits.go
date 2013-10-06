@@ -1,5 +1,5 @@
-// A small package with functions to compute hamming
-// distance and bits set.
+// Package bits has functions to compute hamming
+// distance and set bits count.
 package bits
 
 var table [256]int = [256]int{
