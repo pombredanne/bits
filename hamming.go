@@ -30,3 +30,25 @@ func Distance(a, b int) int {
 	}
 	return distance
 }
+
+func Set(x uint32) int {
+  c := 0
+  for ; x > 0; x >>= 8 {
+    c += table[x&0xFF]
+  }
+  return c
+}
+
+func SetK(a uint32) int {
+  c := 0
+  for ; a != 0; c++ {
+    a &= a-1
+  }
+  return c
+}
+
+func SetP(i uint32) uint32 { 
+  i = i - ((i >> 1) & 0x55555555);
+  i = (i & 0x33333333) + ((i >> 2) & 0x33333333);
+  return (((i + (i >> 4)) & 0x0F0F0F0F) * 0x01010101) >> 24;
+}
